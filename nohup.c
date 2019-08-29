@@ -75,7 +75,7 @@ int main(int argc, char* argv[]) {
 		return -1;
 	}
 
-	mydaemon(buf);
+	mydaemon(logfile);
 	if (execlp(argv[1], argv[1], NULL) == -1) {
 		perror("exec error");
 	}
